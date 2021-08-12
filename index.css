@@ -1,0 +1,609 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:200;}
+
+/*
+
+NAVIGATION
+
+*/
+
+.container {
+  position: relative;
+  margin-top: 100px;
+}
+.container img {
+  display: block;
+  width: 100%;
+}
+nav {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 5%;
+  height: 100px;
+  background-color: white;
+  border-bottom: solid 1px lightgrey
+}
+nav .logo {
+  float: left;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+nav .links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+}
+
+nav .links li {
+  list-style: none;
+}
+
+nav .links a {
+  display: block;
+  padding: 1em;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  font-weight : 200;
+  color : black;
+
+}
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+}
+nav .icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav .icon-burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: #505050;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+}
+
+#logo{
+  width:10%;
+  height:auto;
+  object-fit: :cover;
+  margin-top: 1%
+}
+
+h1{
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 3%;
+  padding-top: 3%
+} 
+
+.NoBanner{
+  width: auto;
+  height:auto;
+  position:relative;
+  top:10%;
+}
+
+
+/*
+
+IMAGE 
+
+*/
+
+.carousel-container{
+  width:50%;
+  height : auto;
+  margin:auto;
+  overflow: hidden;
+  position: relative;
+  float:left;
+  margin-left: 5%
+}
+
+.carousel-slide{
+  display:flex;
+  width:100%;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+
+#PrevButton{
+  position: absolute;
+  top:50%;
+  z-index: 10;
+  left:5%;
+  font-size:50px;
+  opacity: 0.5;
+  color: white;
+  cursor: pointer
+
+}
+
+#NextButton{
+  position: absolute;
+  top:50%;
+  z-index: 10;
+  right:5%;
+  font-size:50px;
+  opacity: 0.5;
+  color: white;
+
+}
+
+
+/*
+
+DESCRIPTION
+
+*/
+
+#TextDescription{
+  float: right;
+  width:40%;
+}
+
+h2{
+  font-weight: 200;
+  margin-top: -1%;
+}
+
+p{
+  padding-right: 10%;
+  text-align:justify;
+  font-size:15px; 
+  font-family: 'Martel';
+}
+
+.ImportantInfo{
+  list-style: none;
+  font-family: 'Martel';
+  font-size:15px; 
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.ImportantInfo:before{
+  content:'\25E6';
+  margin-right: 1%;
+  color:grey;
+}
+
+.TextReadMore{
+  display: block;
+  opacity: 0;
+  height:0;
+  transition: all 0.5s; 
+}
+
+.TextReadMore--open{
+  position: relative;
+  opacity: 1;
+  display:block;
+  height : 15%;
+}
+
+.ReadMoreBtn{
+  text-align: center; 
+  padding: 0.6rem 1.5rem 0rem;
+  color:var(--accent);
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+  cursor:pointer; 
+  border-bottom: 1px solid lightgrey;
+  margin-right:10%;
+}
+
+.ReadMoreBtn:hover{
+transform : translateY(5px);
+}
+
+
+
+/* 
+SHOP NOW
+*/
+
+.ShopNow{
+  margin-top: 5%
+}
+
+h3{
+  font-weight: 200;
+}
+
+.ColorContainer{
+  margin: 0px;
+  padding: 0px;
+  align-content: center;
+}
+
+
+
+.WhiteColor{
+  float:left;
+  font-weight: 200;
+  margin-right: 10% ;
+  display:inline-block;
+  margin: 0px
+
+}
+
+.RedColor{
+  float:right;
+  font-weight: 200;
+  transform: translate(-200%,0%);
+  display:inline-block;
+  margin: 0px
+
+}
+
+.switch-toggle {
+  height: auto;
+  align-items: center;
+  float:center;
+  width: 30%;
+  display:inline-block;
+  transform: translate(33%,-15%);
+}
+.switch-btn, .layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button-check {
+  position: relative;
+  width: 90px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.switch-btn {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: beige;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+#button-check .switch-btn:before, #button-check .switch-btn:after {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 30px;
+  height: 20px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+#button-check .checkbox:checked + .switch-btn:before {
+  left: -50px;
+  background-color: #960018;
+}
+
+#button-check .checkbox:checked + .switch-btn:after {
+  right: 4px;
+}
+
+#button-check .checkbox:checked ~ .layer {
+  background-color: #960018;
+}
+
+
+.ButtonWrapper{
+  text-align: center;
+}
+
+#StartButton{
+  background-color: black;
+  width: 80%;
+  min-height: 40px;
+  border-radius: 200px;
+  border: 0px ;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right:5%;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:400;
+  font-size: 17px;
+  cursor: pointer;
+
+}
+
+#StartButton:hover { 
+  background: black;
+  width:85%;
+  -webkit-transition: .5s, max-width 2s;
+  color: white;
+
+
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+
+/*
+SELECT QUANTITY BUTTON
+*/
+
+
+
+button, #InputNumber {
+  display : inline-block;
+  padding : 10px;
+}
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+html,body {
+  width:100%;
+  height:100%;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+
+  html,body {
+  height:100%;
+  padding: 0;
+  margin: 0;
+}
+
+ h1{
+  font-size: 25px
+}
+
+h2{
+  font-size: 20px;
+  text-align: center
+}
+
+h3{
+  font-size: 15px;
+  text-align: center
+}
+
+h4{
+  font-size: 12px;
+  text-align: center
+}
+
+/*
+.TextReadMoreMobile{
+  display: block;
+  opacity: 0;
+  height:0;
+  transition: all 0.5s; 
+}
+
+.TextReadMoreMobile--open{
+  position: relative;
+  opacity: 1;
+  display:block;
+  height : 50%;
+}
+*/
+
+.ReadMoreBtn{
+  margin-left: 12%;
+  margin-bottom: 10%;
+  margin-top: 0px
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.carousel-container{
+  margin-left: -38%;
+  width :185%
+}
+
+#PrevButton{
+  font-size:30px;
+}
+
+#NextButton{
+  font-size:30px;
+}
+
+#Description{
+  position: relative;
+  margin-right:25%;
+  margin-left: 20%;
+}
+
+li{
+  margin-right: 20px;
+  list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em;
+}
+
+
+
+#TextDescription{
+  width : 140%;
+  align-content: center;
+  margin-top : 10%;
+  margin-right:-25%;
+  align-content: left 
+}
+
+#text{
+  padding:0px;
+  margin: 0px;
+}
+
+.RedColor{
+  float:right;
+  font-weight: 200;
+  transform: translate(0%,13%);
+  display:inline-block;
+  margin: 0px
+
+}
+.WhiteColor{
+  margin-right: 3.5%
+
+}
+
+.checkbox{
+transform: translateX(5%);}
+
+.selected {
+  margin-left: 30%;
+  width:100%
+}
+
+.select-box {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+    display: inline-block;
+
+}
+
+
+nav{
+  align-content: center;
+  display: inline-block;
+  text-align: center
+}
+
+  nav #logo {
+      float: left;
+  width: 30%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin-top: 5%
+  }
+
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,.8);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+  }
+  nav .links a {
+    font-size: 20px;
+    color:white;
+  }
+  nav :checked ~ .links {
+    bottom: 0;
+  }
+  nav .icon-burger {
+    display: block;
+  }
+  nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+}
+
+
+
+
+
+
+
+
