@@ -77,36 +77,6 @@ CardHolder.addEventListener('click',e => {
 })
 
 
-//////////////////
-////QUANTITY//////
-//////////////////
-
-
-let btnAdd = document.querySelector("#add");
-let btnSubtract = document.querySelector("#subtract");
-let input = document.querySelector("#InputNumber");
-
-btnAdd.addEventListener('click',()=>{
-    input.value = parseInt(input.value)+1;
-    if (input.value > 5) {
-     input.value = 5;
-  end
-}
-});
-
-
-btnSubtract.addEventListener('click',()=>{
-        input.value = parseInt(input.value)-1;
-        if (input.value < 0) {
-     input.value = 0;
-  end
-}
-
-});
-
-
-
-
 
 
 

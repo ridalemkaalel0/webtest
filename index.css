@@ -394,16 +394,6 @@ html.is-animating .transition-fade {
 }
 
 
-/*
-SELECT QUANTITY BUTTON
-*/
-
-
-
-button, #InputNumber {
-  display : inline-block;
-  padding : 10px;
-}
 
 
 
@@ -423,8 +413,14 @@ html,body {
   margin: 0;
 }
 
+.NoBanner{
+  position:relative;
+  top:13%;
+}
+
  h1{
-  font-size: 25px
+  font-size: 25px;
+  text-align: center
 }
 
 h2{
@@ -516,7 +512,7 @@ li{
 .RedColor{
   float:right;
   font-weight: 200;
-  transform: translate(0%,13%);
+  transform: translate(0%,0%);
   display:inline-block;
   margin: 0px
 
