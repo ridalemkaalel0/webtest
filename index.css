@@ -427,6 +427,11 @@ html,body {
 
 @media (max-width: 900px) {
 
+  * {
+    -webkit-tap-highlight-color: transparent !important; /* pour retirer la mise en avant */
+
+}
+
   html,body {
   height:100%;
   padding: 0;
@@ -561,7 +566,7 @@ transform: translateX(5%);}
 }
 
 #StartButton { 
-  background: black;
+  background: black !important;
   color:white;
 }
 
