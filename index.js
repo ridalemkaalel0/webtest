@@ -57,7 +57,7 @@ carouselSlide.addEventListener('transitionend', ()=>{
 //READ BTN DESCRIPTION//
 ////////////////////////
 
-const Btn = document.querySelector('.ReadMoreBtn');
+/*const Btn = document.querySelector('.ReadMoreBtn');
 
 const Text = document.querySelector('.TextReadMore');
 
@@ -74,7 +74,7 @@ CardHolder.addEventListener('click',e => {
     currentText.classList.toggle('TextReadMore--open');
     current.textContent = current.textContent.includes('Read more...') ? 'Read less...' : 'Read more...';
 
-})
+})*/
 
 
 
@@ -102,10 +102,55 @@ var isMobile = {
 };
 
 if( isMobile.any() ) 
-    {var btn = '.TextReadMoreMobile';}
+    {var btn = '.TextReadMoreMobile';
+const Btn = document.querySelector('.ReadMoreBtn');
+
+const Text = document.querySelector('.TextReadMoreMobile');
+
+const CardHolder = document.querySelector('#TextDescription');
+
+CardHolder.addEventListener('click',e => {
+    const current = e.target;
+    const isReadMoreBtn = current.className.includes('ReadMoreBtn');
+
+    if(!isReadMoreBtn)
+        return;
+
+    const currentText = e.target.parentNode.querySelector('.TextReadMoreMobile');
+    currentText.classList.toggle('TextReadMoreMobile--open');
+    current.textContent = current.textContent.includes('Read more...') ? 'Read less...' : 'Read more...';
+
+});}
+
 else{
     var btn = '.TextReadMore';
+const Btn = document.querySelector('.ReadMoreBtn');
+
+const Text = document.querySelector('.TextReadMore');
+
+const CardHolder = document.querySelector('#TextDescription');
+
+CardHolder.addEventListener('click',e => {
+    const current = e.target;
+    const isReadMoreBtn = current.className.includes('ReadMoreBtn');
+
+    if(!isReadMoreBtn)
+        return;
+
+    const currentText = e.target.parentNode.querySelector('.TextReadMore');
+    currentText.classList.toggle('TextReadMore--open');
+    current.textContent = current.textContent.includes('Read more...') ? 'Read less...' : 'Read more...';
+
+});}
+
+
+var lastScrollTop = 0;
+navbar= document.getElementById('scrollmouse');
+window.addEventListener('scroll', function(){
+var ScrollTop = window.pageYOffset || document.documentElement.ScrollTop;
+if(ScrollTop>lastScrollTop){
+    navbar.style.opacity = '0';
 }
 
-
+})
 
