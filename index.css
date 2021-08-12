@@ -447,7 +447,8 @@ html,body {
 
  h1{
   font-size: 25px;
-  text-align: center
+  text-align: center;
+  margin-left:2%;
 }
 
 h2{
@@ -533,7 +534,7 @@ li{
   border: 2px solid black;
   position: absolute;
   left: 130%;
-  transform:translateY(-100%);
+  transform:translateY(-550%);
   border-radius: 50px;
   cursor: pointer;
   border: transparent;
@@ -660,7 +661,7 @@ nav{
     background-color: white;
     overflow: hidden;
     box-sizing: border-box;
-    transition: all .5s ease-in-out;
+    transition: all .4s ease-in-out;
   }
   nav .links a {
     font-size: 20px;
