@@ -450,7 +450,7 @@ h2{
 
 h3{
   font-size: 15px;
-  text-align: center
+  text-align: center;
 }
 
 h4{
@@ -559,6 +559,12 @@ transform: translateX(5%);}
     display: inline-block;
 
 }
+
+#StartButton { 
+  background: black;
+  color:white;
+}
+
 
 
 nav{
