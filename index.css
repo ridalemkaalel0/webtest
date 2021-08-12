@@ -86,6 +86,10 @@ nav .icon-burger .line {
   transition: all .3s ease-in-out;
 }
 
+nav:focus {
+outline: 0;
+}
+
 #logo{
   width:10%;
   height:auto;
@@ -158,6 +162,14 @@ IMAGE
   opacity: 0.5;
   color: white;
 
+}
+
+#PrevButton:focus {
+outline: 0;
+}
+
+#NextButton:focus {
+outline: 0;
 }
 
 
@@ -307,6 +319,13 @@ h3{
   opacity: 0;
   cursor: pointer;
   z-index: 3;
+}
+.checkbox:focus {
+outline: 0;
+}
+
+.switch-toggle:focus {
+outline: 0;
 }
 
 .switch-btn {
