@@ -3,138 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inho Studio | Ceramic Candleholder</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap" rel="stylesheet">
+    <title>Inho Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<meta content='width=device-width, initial-scale=1' name='viewport'/>
-
-
-
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </head>
 <body>
+    <!-- loader  -->
+    
+    <div class="container">
+        <!-- nav  -->
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            <img src ='logo.png' id = 'logo' alt='Inho studio ceramic logo'>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Products/index.html">Products</a></li>
+                <li><a href="About/index.html">About</a></li>
+                <li><a href="Contact/index.html">Contact</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
 
-    <nav>
-        <input id="nav-toggle" type="checkbox">
-        <img src ='logo.png' id = 'logo' alt='Inho studio ceramic logo'>
-        <ul class="links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Products</a></li>
-            <li><a href="#work">About</a></li>
-            <li><a href="#projects">Contact</a></li>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
-    </nav>
 
-    <div class = 'NoBanner'>
-    <h1>Ceramic Candleholder</h1>
-
-    <div id = 'Description'>
-
-        <div class = "carousel-container">
-
-             <i class="fas fa-arrow-right" id = 'NextButton'></i>
-             <i class="fas fa-arrow-left" id='PrevButton'></i>
-
-            <div class = 'carousel-slide'>
-
-                <img src = '2.jpeg' id = 'lastClone' class='slider-image'>
-
-                <img src = '1.jpeg' class = 'slider-image'>
-               
-                <img src = '2.jpeg' class = 'slider-image'>
-
-                <img src = '1.jpeg' id = 'firstClone' class='slider-image'>
-
-            </div>
-
-        </div>
-
-        <div id = 'TextDescription'> 
-                
-                <h2>Product description</h2>
-
-                <ul>
-                    <li class= 'ImportantInfo'>Handmade and handcrafted in Italy</li>
-                    <li class= 'ImportantInfo'>White stonewear vitreous clay</li>
-                    <li class= 'ImportantInfo'>Colors: Red Carmin, Linen white</li>
-
-                </ul>
-                
-                <div id='flip'>
-                    <p id = 'text'>
-                        <span class ='TextReadMoreMobile'>
-                        With its white aesthetic minimalist design, this unique ceramic candleholder will perfectly complement your dinner table decoration. The unique rounded shape of the candleholder gives a warm and elegant ambiance to modern home interiors.
-                        <span class ='TextReadMore'>
-                        <br>
-                        If you are struggling looking for the perfect birthday gift or housewarming gift, this set of candleholders will charm your friends and family. Because it is thrown on a potter’s wheel, this product can make an original gift, a unique gift, due to the variations from one candlestickholder to the other. 
-                        <br><br>
-                        Based in Milano, Italia, Inho Studio makes modern functional ceramics. Every product that is brought to you is handmade from start to end.
-                        <br><br>
-                        Candleholder dimension:
-                        
-                            Candleholder top diameter:
-                            Candleholder waiste diameter:
-                        </span></span>
-                    </p>
-                    <p class = 'ReadMoreBtn' >Read more...</p>      
-             </div>
-
-             <div class = 'ShopNow'>
-                 
-                 <h2>Shop</h2>
-
-                 <a id = 'scrollmouse' href="#ColorContainer">
-                  <div class="scroll-down"></div>
-                </a>
-
-                 <h3 id='selectcolor'>Select a color</h3>
-
-                 <div class = 'ColorContainer'>
-
-                    <h4 class = 'WhiteColor'>Linen White</h4>
-
-                    <div class="switch-toggle">
-                        <div class="button-check" id="button-check">
-                            <input type="checkbox" class="checkbox">
-                            <span class="switch-btn"></span>
-                            <span class="layer"></span>
-                        </div>
+        <div class='NoBanner'>
+                <!-- hero image  -->
+                <div class="wrapper-img">
+                    <div class="box"></div>
+                    <div>
+                      <img class="image" src="2.jpeg">
                     </div>
-
-                    <h4 class = RedColor>Carmin Red</h4>
-
-                </div> 
-
-            </div>
-
-                <div class = "ButtonWrapper">
-                            <input type="button" id="StartButton" value="Add to cart">
                 </div>
 
-             </div>
+                <!-- header  -->
+                <div class="header">
+                    <h1 class="header-1">Inho</h1>
+                    <h1 class="header-2">Studio</h1>
+                </div>
 
+                <div class = "text">
+                    <h3>COMING SOON!</h3>
+                    <p>Getting a facelift,<br> we will be celebrating the launch of our website very soon!</p>
+                </div>
         </div>
 
 
     </div>
-</div>
-    
-
-
-
-        
-
-
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src ="index.js"> </script>
+    <script>
+
+
+   
+
+    TweenMax.to(".box", 2.4, {
+    y: "-100%",
+    ease: Expo.easeInOut,
+    delay: 0,
+    });
+
+    TweenMax.to(".header", 2.4, {
+    y: "-100%",
+    ease: Expo.easeInOut,
+    delay: 0,
+    });
+
+    var tl = new TweenMax.staggerFrom(".menu > div", 2, {
+        opacity: 0,     
+        y: 30,
+        ease: Expo.easeInOut,
+        delay: 0
+    }, 0.1);
+
+
+    </script>
 </body>
 </html>
