@@ -134,4 +134,31 @@ if(ScrollTop>lastScrollTop){
 
 
 //TOGGLO
-colortoggle = document.getElementsByTagName('button-check')
+colortoggle = document.getElementsByClassName('checkbox')[0];
+var redcolor = document.getElementsByClassName('RedColor')[0];
+var whitecolor = document.getElementsByClassName('WhiteColor')[0]
+
+whitecolor.style.fontWeight = 'bold';
+whitecolor.style.fontStyle = "italic";
+
+colortoggle.addEventListener('click', ()=>{
+
+    if (colortoggle.checked){
+        ;
+        redcolor.style.fontWeight = "bold";
+        redcolor.style.fontStyle = "italic";
+
+        whitecolor.style.fontWeight = "normal"
+        whitecolor.style.fontStyle = "normal"
+
+    }
+    else
+        {;
+        whitecolor.style.fontWeight = "bold";
+        whitecolor.style.fontStyle = "italic";
+
+        redcolor.style.fontWeight = "normal";
+        redcolor.style.fontStyle = "normal";
+;}
+})
+
