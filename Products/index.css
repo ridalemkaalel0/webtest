@@ -181,6 +181,7 @@ html,body {
   font-size: 25px;
   text-align: center;
   margin-left:1%;
+  margin-bottom: 10%
 }
 
 
@@ -238,7 +239,23 @@ nav{
     opacity: 0;
   }
   
+
+
+  .container { display: flex; flex-flow: column; 
+  }
+
+.image-div1 { order: 1; }
+.image-div2 { order: 2 }
+.image-div3 { order: 3 }
+.image-div4 { order: 4 }
+
+
+
+
 }
+
+
+
 
 
 
