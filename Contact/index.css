@@ -12,6 +12,23 @@ NAVIGATION
 
 */
 
+  .NoBanner{
+  animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn{
+  from{
+    opacity: 0.5;
+    transform: translateY(-10px);
+    };
+
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+  }
+
 .container {
   position: relative;
   margin-top: 100px;
@@ -124,9 +141,10 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-size: 15px
 }
 .container {
-  width: 90%;
+  width: 60%;
   max-width: 500px;
   margin: 0 auto;
   margin-top:-15%;
@@ -139,16 +157,16 @@ section {
 .form-group {
   width: 100%;
   margin-top: 20px;
-  font-size: 20px;
+  font-size:15px;
 }
 
 
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
-  padding: 5px;
-  font-size: 18px;
+  width: 97%;
+  font-size: 15px;
+  padding : 1% 0px;
   border: 1px solid rgba(128, 128, 128, 0.199);
   margin-top: 5px;
 }
